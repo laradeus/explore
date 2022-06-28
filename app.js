@@ -154,11 +154,11 @@ function redimensionaBarras() {
 
           // Transforma o valor de 0 a 100 (colocado para criar uma barra maior) no correto valor
         }else if (atributo =="analfabetismo"){
-          percentual.textContent = (valor/10).toFixed(2)
+          percentual.textContent = (valor/10).toFixed(2) + "%"
      
         } else {
 
-          percentual.textContent = valor
+          percentual.textContent = valor + " anos"
           
 
         }

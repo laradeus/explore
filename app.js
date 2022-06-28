@@ -57,7 +57,7 @@ let dados = [
   }
 ]
 
-// Seleciona a <ul> da página, para popularmos ela
+// Seleciona a <ul> da página, para inserirmos os gráficos ela
 let lista = document.querySelector( 'ul' )
 
 // Cria elementos para o gráfico
@@ -123,7 +123,7 @@ function redimensionaBarras() {
         let percentual = item.querySelector( '.percentual' )
         let explicacao = item.querySelector(".explicacao")
 
-        // Guarda o valor dado.gatos ou dado.cachorros, dependendo da opção selecionada
+        // Guarda o valor dado.atributo, dependendo da opção selecionada
         let valor = dado[ atributo ]
 
         // Calcula o comprimento para as barras (o valor 4 é arbitrário)
@@ -131,21 +131,28 @@ function redimensionaBarras() {
         
         // Aplica o comprimento à barra
         barra.style.width = largura + 'px' 
-
+        
         if (atributo == "mortalidade") {
 
-          // Adiciona o percentual, como texto
+          // Adiciona o percentual, como texto, no caso de "mortalidade" selecionada
           percentual.textContent = valor + '%'
-
+          
+          // Adiciona o percentual, como texto, no caso de "superior" selecionada
         } else if (atributo == "superior") {
           percentual.textContent = valor + '%'
 
+          // Transforma o valor de 0 a 100 (colocado para criar uma barra proporcional) no correto valor
+
         } else if (atributo == "idh"){
           percentual.textContent = valor*10
+          
+          // Transforma o valor de 0 a 100 (colocado para criar uma barra proporcional) no correto valor
 
         } else if (atributo =="gini") {
 
           percentual.textContent = valor/100
+
+          // Transforma o valor de 0 a 100 (colocado para criar uma barra maior) no correto valor
         }else if (atributo =="analfabetismo"){
           percentual.textContent = (valor/10).toFixed(2)
      

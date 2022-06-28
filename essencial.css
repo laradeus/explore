@@ -1,0 +1,15 @@
+/* Padroniza a largua dos nomes das regiões */
+.rotulo {
+  display: inline-block;
+  width: 120px;
+}
+
+/* Aplica cor, altura e transição para as barras */
+.barra {
+  display: inline-block;
+  width: 0;
+  height: 10px;
+  margin-right: 5px;
+  background: #087e8b;
+  transition: all 1s;
+}

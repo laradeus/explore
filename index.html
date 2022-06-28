@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raio-x da desigualdade: São Paulo</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="essencial.css">
+    <link rel="stylesheet" href="estetico.css">
+  </head>
+  <body>
+    <h1>Raio-X da desigualdade entre as regiões do município de São Paulo</h1>
+    <div class="explicacao">O IDH-M é o Índice de Desenvolvimento Humano Municipal, medido de 0 a 1000 e calculado a partir de diversos fatores ligados à saúde e a educação daquela população.<br><br> Já o Coeficiente Gini mede a desigualdade de uma população, e sua escala vai de 0 a 1. Quanto mais próximo a zero, menos desigual é o grupo. <br> <br>Estes índices variam bastante entre as regiões da cidade de São Paulo. Confira: </div>
+    <label>
+      Selecione abaixo um dado para comparar entre as regiões: 
+      <br>
+      <select>
+        <option value="idh" selected>IDH-M</option>
+        <option value="esperancavida">Esperança de vida ao nascer</option>
+        <option value="gini">Coeficiente de Gini</option>
+        <option value="mortalidade">% de mortalidade entre menores de 1 ano</option>
+        <option value="analfabetismo">% de analfabetismo entre pessoas acima de 15 anos</option>
+        <option value="superior">% de pessoas acima de 25 anos com ensino superior</option>
+      </select>
+    </label>
+
+    <ul>
+    
+    </ul>
+
+    <footer>
+      <p>
+        Fonte:
+        <a href="http://dados.prefeitura.sp.gov.br/pt_PT/dataset/indice-de-desenvolvimento-humano-municipal" target="_blank">Índice de Desenvolvimento Humano Municipal (IDHM) 2010</a>,
+        Prefeitura de São Paulo.
+      </p>
+    </footer>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>
